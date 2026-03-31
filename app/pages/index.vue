@@ -8,4 +8,11 @@
 const { data: page } = await useAsyncData('index', () =>
   queryCollection('content').path('/').first()
 )
+
+useHead({
+  title: page.value?.title ?? 'Antirevolutionary',
+  meta: [
+    { name: 'description', content: page.value?.description ?? '' },
+  ],
+})
 </script>

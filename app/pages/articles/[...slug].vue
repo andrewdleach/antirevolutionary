@@ -20,4 +20,11 @@ const slug = Array.isArray(route.params.slug)
 const { data: article } = await useAsyncData(`article-${slug}`, () =>
   queryCollection('content').path(`/articles/${slug}`).first()
 )
+
+useHead({
+  title: article.value?.title ?? 'Antirevolutionary',
+  meta: [
+    { name: 'description', content: article.value?.description ?? '' },
+  ],
+})
 </script>
