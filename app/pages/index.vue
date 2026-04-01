@@ -127,11 +127,17 @@ async function handleSubmit() {
   error.value = ''
   submitting.value = true
 
-  // Simulate async (wire up to /api/subscribe or a service like Resend later)
-  await new Promise(resolve => setTimeout(resolve, 600))
-
-  submitting.value = false
-  submitted.value = true
+  try {
+    await $fetch('/api/subscribe', {
+      method: 'POST',
+      body: { email: email.value },
+    })
+    submitted.value = true
+  } catch (err: any) {
+    error.value = err?.data?.message ?? 'Something went wrong. Please try again.'
+  } finally {
+    submitting.value = false
+  }
 }
 </script>
 
