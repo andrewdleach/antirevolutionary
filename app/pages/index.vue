@@ -154,6 +154,9 @@ async function handleSubmit() {
 /* ─── Base ──────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Fix overscroll flash on iOS/Chrome */
+html, body { background: #0d0c0b; }
+
 .wrapper {
   position: relative;
   min-height: 100vh;
@@ -289,12 +292,13 @@ async function handleSubmit() {
 .title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: clamp(3.6rem, 9vw, 7.5rem);
+  font-size: clamp(1.6rem, 7vw, 7.5rem);
   line-height: 0.9;
   letter-spacing: -0.025em;
   text-transform: uppercase;
   color: var(--ivory);
   margin-bottom: 2.2rem;
+  max-width: 100%;
 }
 
 /* ─── Badge ─────────────────────────────────────────────── */
