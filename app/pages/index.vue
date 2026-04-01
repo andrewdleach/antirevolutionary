@@ -29,8 +29,7 @@
 
       <!-- Title -->
       <h1 class="title animate-2">
-        <em class="title-anti">Anti</em>
-        <span class="title-main">Revolutionary</span>
+        <em class="title-anti">Anti</em><span class="title-main">Revolutionary</span>
       </h1>
 
       <!-- Coming soon badge -->
@@ -294,32 +293,22 @@ html, body { background: #0d0c0b; }
 /* ─── Title ─────────────────────────────────────────────── */
 .title {
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 600;
-  line-height: 1;
+  font-size: clamp(1.6rem, 7vw, 7.5rem);
+  line-height: 0.9;
   letter-spacing: -0.025em;
   color: var(--ivory);
   margin-bottom: 2.2rem;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.1em;
+  text-transform: uppercase;
 }
 .title-anti {
-  font-size: clamp(1.1rem, 4vw, 3.5rem);
   font-style: italic;
   font-weight: 300;
   color: var(--amber);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  line-height: 1;
 }
 .title-main {
-  font-size: clamp(1.6rem, 7vw, 7.5rem);
   font-style: normal;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 0.88;
+  font-weight: 700;
 }
 
 /* ─── Badge ─────────────────────────────────────────────── */
