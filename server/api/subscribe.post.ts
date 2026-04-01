@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
   const resend = new Resend(apiKey)
 
   const { error } = await resend.emails.send({
-    from: 'Antirevolutionary <noreply@antirevolutionary.org>',
+    from: 'Antirevolutionary <info@antirevolutionary.org>',
     to: 'info@antirevolutionary.org',
     subject: 'New subscriber',
     text: `New subscriber signed up: ${email}`,
