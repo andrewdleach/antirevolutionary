@@ -293,12 +293,13 @@ html, body { background: #0d0c0b; }
 /* ─── Title ─────────────────────────────────────────────── */
 .title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.6rem, 7vw, 7.5rem);
+  font-size: clamp(1.4rem, 5.5vw, 3.8rem);
   line-height: 0.9;
   letter-spacing: -0.025em;
   color: var(--ivory);
   margin-bottom: 2.2rem;
-  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
   text-transform: uppercase;
 }
 .title-anti {
