@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="10" fill="#0d0c0b"/>
+  <!-- Crown -->
+  <path d="M 7,54 L 7,32 L 13,18 L 22,32 L 32,7 L 42,32 L 51,18 L 57,32 L 57,54 Z" fill="#c9a84c"/>
+  <!-- Jewel dots at crown tips -->
+  <circle cx="13" cy="18" r="3" fill="#e8e0d0"/>
+  <circle cx="32" cy="7" r="3" fill="#e8e0d0"/>
+  <circle cx="51" cy="18" r="3" fill="#e8e0d0"/>
+</svg>
