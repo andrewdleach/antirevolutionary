@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: relative;">
     <div id="header">
       <div>
         <h1>2026 Legislative Opportunities — Kitsap · Pierce · South King County</h1>
@@ -356,6 +356,10 @@ onMounted(async () => {
   }).addTo(map)
 
   await tryLoadGeo(L)
+})
+
+onUnmounted(() => {
+  if (map) { map.remove(); map = null; geoLayer = null }
 })
 </script>
 
