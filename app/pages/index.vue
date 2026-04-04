@@ -89,6 +89,12 @@
         <p class="form-note">Be the first to know when we launch.</p>
       </div>
 
+      <!-- Battlefield CTA -->
+      <div class="battlefield-cta animate-7">
+        <div class="cta-sep" />
+        <NuxtLink to="/united-states" class="cta-link">Explore the Battlefield →</NuxtLink>
+      </div>
+
     </main>
 
     <!-- Footer -->
@@ -242,6 +248,7 @@ html, body { background: #0d0c0b; }
 .animate-4 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.95s both; }
 .animate-5 { animation: fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) 1.15s both; }
 .animate-6 { animation: fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) 1.35s both; }
+.animate-7 { animation: fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) 1.55s both; }
 
 /* ─── Main content ──────────────────────────────────────── */
 .main {
@@ -493,6 +500,32 @@ html, body { background: #0d0c0b; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(232,224,208,0.16);
+}
+
+/* ─── Battlefield CTA ───────────────────────────────────── */
+.battlefield-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.cta-sep {
+  width: 40px;
+  height: 1px;
+  background: var(--amber-faint);
+}
+.cta-link {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--amber);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+.cta-link:hover {
+  opacity: 0.7;
 }
 
 /* ─── Responsive ────────────────────────────────────────── */
