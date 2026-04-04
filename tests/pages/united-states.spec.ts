@@ -22,7 +22,7 @@ describe('US map page', () => {
 
   it('WA state path has active class', async () => {
     const wrapper = await mountSuspended(UnitedStatesPage)
-    const waPath = wrapper.find('[data-state-id="WA"]')
+    const waPath = wrapper.find('[data-state-id="wa"]')
     expect(waPath.exists()).toBe(true)
     expect(waPath.classes()).toContain('state--active')
   })

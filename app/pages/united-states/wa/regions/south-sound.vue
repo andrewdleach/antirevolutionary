@@ -12,34 +12,34 @@
       <NuxtLink to="/united-states" class="back-link">← Washington</NuxtLink>
     </div>
 
-    <div id="map" />
+    <div id="map">
+      <div class="legend" id="legend">
+        <h4>Opportunity level</h4>
+        <div class="legend-item">
+          <div class="swatch" style="background:#1a6aee;opacity:1" /><span>Open seat — no incumbent (D-lean)</span>
+        </div>
+        <div class="legend-item">
+          <div class="swatch" style="background:#c7281a;opacity:1" /><span>Open seat — no incumbent (R-lean)</span>
+        </div>
+        <div class="legend-item">
+          <div class="swatch" style="background:#4a9af0;opacity:0.8" /><span>Contested — challengers filed</span>
+        </div>
+        <div class="legend-item">
+          <div class="swatch" style="background:#aac8f8" /><span>On ballot — uncontested so far</span>
+        </div>
+        <div class="legend-section">Gradient = D ← → R</div>
+        <div class="legend-item" style="display:flex;gap:4px;align-items:center">
+          <div style="width:80px;height:10px;border-radius:3px;background:linear-gradient(to right,#1a5fc7,#6a3daa,#c7281a);border:0.5px solid rgba(0,0,0,.1)" />
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:10px;color:#aaa;margin-top:2px">
+          <span>D</span><span>R</span>
+        </div>
+      </div>
 
-    <div class="legend" id="legend">
-      <h4>Opportunity level</h4>
-      <div class="legend-item">
-        <div class="swatch" style="background:#1a6aee;opacity:1" /><span>Open seat — no incumbent (D-lean)</span>
+      <div class="loading-msg" id="loading-msg">
+        <div class="spinner" />
+        <div>Loading district boundaries from Census TIGER…</div>
       </div>
-      <div class="legend-item">
-        <div class="swatch" style="background:#c7281a;opacity:1" /><span>Open seat — no incumbent (R-lean)</span>
-      </div>
-      <div class="legend-item">
-        <div class="swatch" style="background:#4a9af0;opacity:0.8" /><span>Contested — challengers filed</span>
-      </div>
-      <div class="legend-item">
-        <div class="swatch" style="background:#aac8f8" /><span>On ballot — uncontested so far</span>
-      </div>
-      <div class="legend-section">Gradient = D ← → R</div>
-      <div class="legend-item" style="display:flex;gap:4px;align-items:center">
-        <div style="width:80px;height:10px;border-radius:3px;background:linear-gradient(to right,#1a5fc7,#6a3daa,#c7281a);border:0.5px solid rgba(0,0,0,.1)" />
-      </div>
-      <div style="display:flex;justify-content:space-between;font-size:10px;color:#aaa;margin-top:2px">
-        <span>D</span><span>R</span>
-      </div>
-    </div>
-
-    <div class="loading-msg" id="loading-msg">
-      <div class="spinner" />
-      <div>Loading district boundaries from Census TIGER…</div>
     </div>
   </div>
 </template>

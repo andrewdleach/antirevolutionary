@@ -20,7 +20,7 @@
             v-for="state in locations"
             :key="state.id"
             :d="state.path"
-            :data-state-id="state.id.toUpperCase()"
+            :data-state-id="state.id"
             :class="['state', { 'state--active': state.id === 'wa' }]"
             :aria-label="state.id === 'wa' ? 'Washington — South Sound' : state.name"
             @click="() => state.id === 'wa' && navigateTo('/united-states/wa/regions/south-sound')"
