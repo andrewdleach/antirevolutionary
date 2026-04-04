@@ -1,5 +1,5 @@
 <template>
-  <div style="position: relative;">
+  <div class="page-wrapper">
     <div id="header">
       <div>
         <h1>2026 Legislative Opportunities — Kitsap · Pierce · South King County</h1>
@@ -366,10 +366,11 @@ onUnmounted(() => {
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; background: #f8f8f6; color: #1a1a18; }
-#header { padding: .75rem 1rem; background: #fff; border-bottom: 0.5px solid #ddd; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.page-wrapper { display: flex; flex-direction: column; height: 100vh; position: relative; }
+#header { flex-shrink: 0; padding: .75rem 1rem; background: #fff; border-bottom: 0.5px solid #ddd; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 #header h1 { font-size: 15px; font-weight: 500; }
 #header p { font-size: 12px; color: #888; margin-top: 2px; max-width: 600px; line-height: 1.5; }
-#map { height: calc(100vh - 90px); width: 100%; }
+#map { flex: 1; width: 100%; }
 .legend { position: absolute; bottom: 20px; left: 10px; z-index: 1000; background: rgba(255,255,255,.97); border: 0.5px solid #ccc; border-radius: 8px; padding: .8rem 1rem; font-size: 12px; min-width: 200px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
 .legend h4 { font-size: 12px; font-weight: 500; margin-bottom: .6rem; color: #333; }
 .legend-section { font-size: 10px; text-transform: uppercase; letter-spacing: .05em; color: #aaa; margin: .6rem 0 .3rem; }
